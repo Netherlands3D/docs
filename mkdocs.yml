@@ -1,3 +1,18 @@
 site_name: Netherlands3D
 theme:
   name: material
+  features:
+    - navigation.sections
+    - navigation.tabs
+nav:
+  - 'index.md'
+  - 'Beginnen met ..':
+      - 'Beginnen.md'
+      - 'DataKlaarzetten.md'
+      - 'DataKoppelen.md'
+  - 'Features':
+    - 'BAG.md'
+    - 'Camera.md'
+    - 'SelectionTools.md'
+    - 'WMSLagen.md'
+    - 'Zonnestand.md'
