@@ -8,6 +8,7 @@ nav:
   - 'index.md'
   - 'Beginnen met ..':
       - 'Beginnen.md'
+      - 'TileSystemGebruiken.md'
       - 'DataKlaarzetten.md'
       - 'DataKoppelen.md'
   - 'Features':

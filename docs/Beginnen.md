@@ -39,7 +39,33 @@ Kies een naam voor je project en de locatie op je computer
 
 Het project wordt vervolgens automatisch geopend in Unity.
 
-## In Unity
+## Netherlands3D packages beschikbaar maken
+
+Met Netherlands3D worden alle packages gepubliceerd op [OpenUPM](https://openupm.com), een Unity Package 
+Registry voor Open Source packages.
+
+OpenUPM raadt aan om hun CLI tool te gebruiken om packages mee te installeren, maar het is ook mogelijk om deze
+als Scoped Registry toe te voegen middels de volgende stappen:
+
+ 
+* open Edit/Project Settings/Package Manager.
+* Voeg een nieuwe Scoped Registry toe, of bewerk de bestaande OpenUPM verwijzing.
+  ```
+  Name: package.openupm.com
+  URL: https://package.openupm.com
+  Scope(s): eu.netherlands3d
+  ```
+* Klik op Save (of Apply)
+
+Om een overzicht te zien van alle packages die je op deze manier kan installeren volg je deze stappen:
+
+* Open de Package Manager
+* In de dropdown `Packages: In Project`, selecteer `My Registries`
+
+In dit overzicht staan alle packages die beschikbaar vanuit Netherlands3D, en andere Scopes mocht je 
+die ingesteld hebben staan.
+
+## Netherlands3D opzetten
 
 Open in Unity de package-manager (window package manager)
 
@@ -99,30 +125,3 @@ Boven in het Graphicsmenu klikken we op het rondje naast het invulveld bij Scrip
 In het menuutje dat opent dubbelklikken we op het bestandje dat we zojuist hebben aangemaakt.
 
 ![](./imgs/beginnen/image13.png)
-
-
-
-## TileSystem gebruiken
-
-Om het tilesystem in actie te zien gaan we in de assetsFolder naar de eerder geimporteerde Sample. 
-In deze sample openen we de map "Scenes".
-
-![](./imgs/beginnen/image14.png)
-
-Vervolgens slepen we het bestand "LoadLayersFromScene" naar de hierarchy.
-
-![](./imgs/beginnen/image15.png)
-
-Om een goed beeld te kunnen krijgen willen we de Main Camera nog even verplaatsen. Dit doen we door in de Hierarchy de Main Camera aan te klikken:
-
-![](./imgs/beginnen/image16.png)
-
-En vervolgens in de inspector de Position en Rotation aan te passen.
-
-![](./imgs/beginnen/image17.png)
-
-Nu we toch in de Inspector voor de camera bezig zijn zetten we ook onder het kopje "Camera", "Projection", "Clipping plane" de afstand voor Far even van 1000 op 6000.
-
-Klik vervolgens op **"Play"**, et voila, we zien het 3D-model van Amsterdam.
-
-Je bent nu klaar om met de volgende stap te beginnen "het koppelen van je eigen dataset", volg hiervoor de handleiding 'DataKlaarzetten.md'
