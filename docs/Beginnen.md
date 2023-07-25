@@ -1,19 +1,24 @@
 # Beginnen met Netherlands3D in Unity
 
+Met deze gids leer je als nieuwe Netherlands3D gebruiker of ontwikkelaar het volgende: 
+* De installatie van het versiebeheersysteem Git.
+* De installatie van Unity. 
+* Het binnenhalen van de Netherlands3D packages.
+* Het opzetten en configureren van een Netherlands3D project in Unity.
 ## Systeemeisen
 
-Een laptop waarop je software mag installeren (nog) geen Apple en het liefst met een i5 CPU (of hoger) 
-en een externe GPU (grafische kaart).
-Windows 10 of hoger (in ieder geval 64 bits).
-Een losse muis om beter te kunnen navigeren.
+Om de Unity editor te gebruiken raden wij de volgende systeem- en hardwarespecificaties aan: 
+* Windows 10 of hoger (in ieder geval 64 bits).
+* Een i5 processor of hoger
+* Een externe GPU (grafische kaart)
+* Een muis voor makkelijke navigatie in de game scene. 
 
 ## Git installeren
 
-Zorg om te beginnen dat Git is geinstalleerd op het systeem. Dit maakt het mogelijk om pakketjes te installeren.
+Om Netherlands3D packages makkelijk te installeren, raden wij het gebruik van Git aan. Download Git vanaf https://gitforwindows.org/.
+Kies voor een installatie met de standaard opties aangevinkt en herstart je lokale machine nadat de installatie is afgerond
 
-Git is te downloaden vanaf https://gitforwindows.org/
-
-Installatie met de standaard opties is voldoende. Herstart je systeem na de installatie.
+Je beschikt nu over een versiebeheersysteem waarmee je het Netherlands3D project kan importeren op je lokale machine. 
 
 ## Unity installeren
 
