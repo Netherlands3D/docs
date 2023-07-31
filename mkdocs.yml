@@ -17,3 +17,5 @@ nav:
     - 'SelectionTools.md'
     - 'WMSLagen.md'
     - 'Zonnestand.md'
+  - 'Packages':
+    - 'packages/creating-and-managing-packages.md'
