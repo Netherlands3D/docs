@@ -1,35 +1,4 @@
-# Beginnen met Netherlands3D in Unity
-
-## Systeemeisen
-
-Een laptop waarop je software mag installeren (nog) geen Apple en het liefst met een i5 CPU (of hoger) 
-en een externe GPU (grafische kaart).
-Windows 10 of hoger (in ieder geval 64 bits).
-Een losse muis om beter te kunnen navigeren.
-
-## Git installeren
-
-Zorg om te beginnen dat Git is geinstalleerd op het systeem. Dit maakt het mogelijk om pakketjes te installeren.
-
-Git is te downloaden vanaf https://gitforwindows.org/
-
-Installatie met de standaard opties is voldoende. Herstart je systeem na de installatie.
-
-## Unity installeren
-
-Download en installeer Unity3D via <https://unity.com/download>
-
-Je download daarmee de 'Unity Hub'. Vanuit deze Hub kan je verschillende versies van Unity downloaden.
-
-'Sign in' met een bestaand Unity account, of maak eerst een nieuw account aan via 'Create account' en doe dan 'Sign in'
-
-Ga eventueel akkoord met het activeren van een 'FREE personal license'.
-
-Kies in het 'Install Unity Editor' scherm rechtsonderin 'skip installation'. Wij willen namelijk een specifieke versie gaan installeren.
-
-Installeer via 'Installs / Install Editor' de LTS (long term service) versie 2021.3.6f1
-
-![image-20220509104007559](./imgs/beginnen/image0.png)
+# Project opzetten
 
 Maak na het installeren in de Hub een nieuw Unity project aan via 'Projects / New Project' en kies als template '3D Core'.
 

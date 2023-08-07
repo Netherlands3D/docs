@@ -6,12 +6,14 @@ theme:
     - navigation.tabs
 nav:
   - 'index.md'
-  - 'Beginnen met ..':
-      - 'Beginnen.md'
+  - 'Beginnen met Netherlands3D':
+      - 'installatie.md'
+      - 'opzetten.md'
       - 'TileSystemGebruiken.md'
       - 'DataKlaarzetten.md'
-      - 'DataKoppelen.md'
-  - 'Features':
+      - 'gebieddsspecificatie.md'
+  - 'basisproject.md'
+  - 'Packages':
     - 'BAG.md'
     - 'Camera.md'
     - 'SelectionTools.md'
