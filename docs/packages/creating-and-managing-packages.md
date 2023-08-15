@@ -120,11 +120,53 @@ When the package has not been published on OpenUPM yet, now is a good time to do
 
 ## Publishing a package on OpenUPM
 
-> To be written.
-> 
+When a package is released for the first time, it needs to be published by registering it on OpenUPM. 
+
+To do so, you can take the following steps:
+
+1. Go to https://openupm.com.
+
+2. Click on the "+" button in the menu bar to add a new package
+   ![Screenshot of OpenUPM showing add button](../imgs/packages/openupm-add-package-location.png)
+
+3. Fill out the Github repository name in the intended field and click on "Go".
+   ![Screenshot of OpenUPM where repository can be submitted](../imgs/packages/openupm-provide-repository-location.png)
+   A form expands where you can verify the package name, ReadMe location and more
+
+4. Enter your github username in the "Discovered by" field; this is used to base a fork of OpenUPM from and add the 
+   package as a pull request.
+
+   ![](../imgs/packages/openupm-submission-form.png)
+   
+   > **Note**: The section "Advanced" is for advanced use when multiple packages are hosted in the same repository; at the moment
+   > this method is not recommended and as such that part of the submission form can be skipped
+   
+5. Check the "Promotion" section if the package fits any of these categories, and check these.
+
+6. Click on the "Verify Package" button, all other fields can be left unchanged.
+
+As soon as the steps above have completed, you are asked to fork the `OpenUPM` repository and to commit these changes in
+a feature branch. At this point you can use the "Create pull request" button to create a pull request to OpenUPM.
+
+> If this is your first time submitting a package to OpenUPM, the maintainer of OpenUPM needs to approve the Pull 
+> Request manually; this is generally done within 24 hours. Any subsequent pull requests will be automatically merged.
+
+After the pull request is merged, it will take 30 to 60 minutes for `OpenUPM` to add the package to the registry.
+
 ## FAQ
 
 > One of the packages does not show up in the Package Manager after publishing
 
 Have you checked the minimum unity version in the `package.json`? If the minimum version is newer than your
 installed version, it will not be visible.
+
+> Why OpenUPM and not add packages through a Git URL?
+
+Good question! When you add packages through a Git URL you lose certain features that packages hosted on a registry do
+have. This includes but is not limited to:
+
+1. Unable to update to a new version: when you use a Git tag/release, then you need to uninstall and reinstall the 
+   package when a new becomes available instead of just using the `Update` button.
+
+2. Git-url based packages cannot be used as dependencies: this means that if a package depends on another, with git 
+   urls you need to manually install the correct dependencies and face possible version conflicts with newer versions.
