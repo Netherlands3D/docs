@@ -155,6 +155,29 @@ After the pull request is merged, it will take 30 to 60 minutes for `OpenUPM` to
 
 ## FAQ
 
+> Can I depend on the `Netherlands3D.Core.Runtime` assembly?
+
+At time of writing, this assembly is within the code of the https://github.com/Amsterdam/Netherlands3D skeleton; meaning
+that this dependency only works when the package is used within a project that is based on this skeleton. This can be
+a problematic dependency since we are actively working on moving the contents of this skeleton into components.
+
+Because of the above, it is not recommended for a published package to depend on the `Netherlands3D.Core.Runtime`
+assembly.
+
+If code from this assembly is needed, it is recommended to extract this code into another package that you can depend 
+on or duplicate it into your own package until such a package can be made.
+
+For more information on this, see the question `Can I depend on Assemblies that are not in my own package?`.
+
+> Can I depend on Assemblies that are not in my own package?
+ 
+You sure can! As long as these assemblies are in a package that is published in a Unity Package Registry such as 
+OpenUPM, and that you have added that package as a dependency to your `package.json` file.
+
+If you add an assembly whose package cannot be included in your `package.json` -either because it is not a package or
+a git-based package- then you will need to add installation instructions in the README. Without these instructions,
+any user of the package will have a missing assembly -and thus errors- without knowing how to fix it.
+
 > One of the packages does not show up in the Package Manager after publishing
 
 Have you checked the minimum unity version in the `package.json`? If the minimum version is newer than your
