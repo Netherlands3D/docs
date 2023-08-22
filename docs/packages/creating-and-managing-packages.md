@@ -42,7 +42,9 @@ This can be done using the following steps:
 3. Create a directory for your [embedded package](https://docs.unity3d.com/Manual/CustomPackages.html#EmbedMe) in the 
    `Packages` folder.
 
-   > The directory name *MUST* follow the structure `eu.netherlands3d.[name]` where `name` is in lower-case [kebab-case](https://www.pluralsight.com/blog/software-development/programming-naming-conventions-explained#kebab-case).
+    !!! warning "Important"
+
+        The directory name *MUST* follow the structure `eu.netherlands3d.[name]` where `name` is in lower-case [kebab-case](https://www.pluralsight.com/blog/software-development/programming-naming-conventions-explained#kebab-case).
 
 4. Copy the template files, located at https://gist.github.com/mvriel/8a8251b492d9d8f742da16667c49e412, and fill in the placeholders.
 
@@ -75,8 +77,10 @@ needs to be made- and follows the following sequence of steps:
 5. In the Twin project, add a reference to `{PACKAGE_NAME}` to the package.json or install the package through
    the package manager.
 
-   > Important: after a package is added to OpenUPM for the first time, it can take between 30 and 60 minutes for it to 
-   > show up in the package listing.
+    !!! warning "Important"
+
+        After a package is added to OpenUPM for the first time, it can take between 30 and 60 minutes for it to 
+        show up in the package listing.
 
 Once a package is promoted, you can no longer edit it as part of the Twin project; in the next chapter 
 [Changing a Package](#changing-a-package) it is described how you can change a promoted package without all too much 
@@ -88,20 +92,22 @@ hassle.
 
 ## Releasing a package
 
-> Before releasing, make sure you have tested your package in https://github.com/Netherlands3D/twin -or another
-> Netherlands3D-based project- installed as a local package.
->
-> Especially important is:
-> 
-> * verifying that the correct dependencies are set and installed
-> * that the Assembly Definition can be used and
-> * that the Assembly Definition does not depend on Assembly Definitions that are not a dependency of your package,
->   especially Netherlands3D.Core.Runtime should be avoided
->
-> Failure to do so may cause extra work because once a package is released, it is impossible to change something
-> in the release and a new release must be made.
-
 When you want to release a new version of a package you generally go through the following steps:
+
+!!! tip
+
+    Before releasing, make sure you have tested your package in [the Twin](https://github.com/Netherlands3D/twin) -or 
+    another Netherlands3D-based project- installed as a local package.
+   
+    Especially important is:
+    
+    * verifying that the correct dependencies are set and installed
+    * that the Assembly Definition can be used and
+    * that the Assembly Definition does not depend on Assembly Definitions that are not a dependency of your package,
+      especially Netherlands3D.Core.Runtime should be avoided
+   
+    Failure to do so may cause extra work because once a package is released, it is impossible to change something
+    in the release and a new release must be made.
 
 1. Go to the repository of your package. If there is none: see the chapter on 
    [Promoting an embedded package](#promoting-an-embedded-package) and do that first.
@@ -135,18 +141,20 @@ When the package has not been published on OpenUPM yet, now is a good time to do
 
 When a package is released for the first time, it needs to be published by registering it on OpenUPM.
 
-> Before publishing, make sure you have tested your package in https://github.com/Netherlands3D/twin -or another
-> Netherlands3D-based project- installed as a local package.
-> 
-> Especially important is:
-> 
-> * verifying that the correct dependencies are set and installed
-> * that the Assembly Definition can be used and 
-> * that the Assembly Definition does not depend on Assembly Definitions that are not a dependency of your package,
->   especially Netherlands3D.Core.Runtime should be avoided
-> 
-> Failure to do so may cause extra work because once a package is published, it is inconvenient to unpublish it or 
-> change publication details such as the name.
+!!! tip
+
+    Before publishing, make sure you have tested your package in https://github.com/Netherlands3D/twin -or another
+    Netherlands3D-based project- installed as a local package.
+    
+    Especially important is:
+    
+    * verifying that the correct dependencies are set and installed
+    * that the Assembly Definition can be used and 
+    * that the Assembly Definition does not depend on Assembly Definitions that are not a dependency of your package,
+      especially Netherlands3D.Core.Runtime should be avoided
+    
+    Failure to do so may cause extra work because once a package is published, it is inconvenient to unpublish it or 
+    change publication details such as the name.
 
 To do so, you can take the following steps:
 
@@ -162,10 +170,12 @@ To do so, you can take the following steps:
 4. Enter your github username in the "Discovered by" field; this is used to base a fork of OpenUPM from and add the 
    package as a pull request.
 
-   ![](../imgs/packages/openupm-submission-form.png)
+    ![](../imgs/packages/openupm-submission-form.png)
+
+    !!! note
    
-   > **Note**: The section "Advanced" is for advanced use when multiple packages are hosted in the same repository; at the moment
-   > this method is not recommended and as such that part of the submission form can be skipped
+        The section "Advanced" is for advanced use when multiple packages are hosted in the same repository; at the moment
+        this method is not recommended and as such that part of the submission form can be skipped
    
 5. Check the "Promotion" section if the package fits any of these categories, and check these.
 
@@ -174,8 +184,10 @@ To do so, you can take the following steps:
 As soon as the steps above have completed, you are asked to fork the `OpenUPM` repository and to commit these changes in
 a feature branch. At this point you can use the "Create pull request" button to create a pull request to OpenUPM.
 
-> If this is your first time submitting a package to OpenUPM, the maintainer of OpenUPM needs to approve the Pull 
-> Request manually; this is generally done within 24 hours. Any subsequent pull requests will be automatically merged.
+!!! tip
+
+    If this is your first time submitting a package to OpenUPM, the maintainer of OpenUPM needs to approve the Pull 
+    Request manually; this is generally done within 24 hours. Any subsequent pull requests will be automatically merged.
 
 After the pull request is merged, it will take 30 to 60 minutes for `OpenUPM` to add the package to the registry.
 
