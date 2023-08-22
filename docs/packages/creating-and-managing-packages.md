@@ -88,6 +88,19 @@ hassle.
 
 ## Releasing a package
 
+> Before releasing, make sure you have tested your package in https://github.com/Netherlands3D/twin -or another
+> Netherlands3D-based project- installed as a local package.
+>
+> Especially important is:
+> 
+> * verifying that the correct dependencies are set and installed
+> * that the Assembly Definition can be used and
+> * that the Assembly Definition does not depend on Assembly Definitions that are not a dependency of your package,
+>   especially Netherlands3D.Core.Runtime should be avoided
+>
+> Failure to do so may cause extra work because once a package is released, it is impossible to change something
+> in the release and a new release must be made.
+
 When you want to release a new version of a package you generally go through the following steps:
 
 1. Go to the repository of your package. If there is none: see the chapter on 
@@ -120,7 +133,20 @@ When the package has not been published on OpenUPM yet, now is a good time to do
 
 ## Publishing a package on OpenUPM
 
-When a package is released for the first time, it needs to be published by registering it on OpenUPM. 
+When a package is released for the first time, it needs to be published by registering it on OpenUPM.
+
+> Before publishing, make sure you have tested your package in https://github.com/Netherlands3D/twin -or another
+> Netherlands3D-based project- installed as a local package.
+> 
+> Especially important is:
+> 
+> * verifying that the correct dependencies are set and installed
+> * that the Assembly Definition can be used and 
+> * that the Assembly Definition does not depend on Assembly Definitions that are not a dependency of your package,
+>   especially Netherlands3D.Core.Runtime should be avoided
+> 
+> Failure to do so may cause extra work because once a package is published, it is inconvenient to unpublish it or 
+> change publication details such as the name.
 
 To do so, you can take the following steps:
 
