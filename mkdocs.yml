@@ -16,6 +16,7 @@ nav:
       - 'DataKlaarzetten.md'
       - 'DataKoppelen.md'
   - 'Features':
+    - 'Embedding.md'
     - 'BAG.md'
     - 'Camera.md'
     - 'SelectionTools.md'
