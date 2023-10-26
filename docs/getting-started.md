@@ -22,7 +22,7 @@ Self-hosting Netherlands3D is great if you have your own website and need more c
 to interact with subscription services or databases and want to customize their setup. If you have a domain and some
 technical skills, this option is for you.
 
-_Target Audience_: government organisations with their own domain and infrastructure
+_Target Audience_: government or private organisations with their own domain and infrastructure
 
 - [Host Netherlands3D using Docker]()
 - [Build Netherlands3D from Source]()
