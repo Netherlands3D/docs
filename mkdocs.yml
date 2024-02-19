@@ -4,6 +4,7 @@ theme:
   features:
     - navigation.sections
     - navigation.tabs
+    - navigation.instant
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -19,8 +20,17 @@ nav:
     - 'Embedding.md'
     - 'BAG.md'
     - 'Camera.md'
-    - 'SelectionTools.md'
-    - 'WMSLagen.md'
-    - 'Zonnestand.md'
+#    - 'SelectionTools.md'
+#    - 'WMSLagen.md'
+#    - 'Zonnestand.md'
   - 'Packages':
     - 'packages/creating-and-managing-packages.md'
+  - 'User interface':
+    - 'ui/introduction.md'
+    - 'ui/keeping-our-documentation-current.md'
+    - 'ui/understanding-blocks.md'
+    - 'ui/understanding-components.md'
+#    - 'Blocks':
+#      - 'ui/blocks/property-panel-and-sections.md'
+#    - 'Components':
+#      - 'ui/components/card.md'
