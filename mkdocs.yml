@@ -7,8 +7,12 @@ theme:
     - navigation.instant
 markdown_extensions:
   - admonition
+  - md_in_html
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
 nav:
   - 'index.md'
   - 'Beginnen met ..':
@@ -30,7 +34,9 @@ nav:
     - 'ui/keeping-our-documentation-current.md'
     - 'ui/understanding-blocks.md'
     - 'ui/understanding-components.md'
-#    - 'Blocks':
-#      - 'ui/blocks/property-panel-and-sections.md'
-#    - 'Components':
-#      - 'ui/components/card.md'
+    - 'Blocks':
+      - 'ui/blocks/property-panel-and-sections.md'
+    - 'Components':
+      - 'ui/components/cards.md'
+      - 'ui/components/sliders.md'
+      - 'ui/components/text-fields.md'
