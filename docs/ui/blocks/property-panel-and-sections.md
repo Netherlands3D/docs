@@ -14,14 +14,14 @@ objects or layers. Additionally, it provides access to specific attributes for c
 may include properties like axis height or rotor diameter.
 
 <figure markdown="span">
-  ![example.png](example.png "A screenshot of a windmill with an open properties panel")
+  ![property-example.png](property-example.png "A screenshot of a windmill with an open properties panel")
   <figcaption>A screenshot of a windmill with an open properties panel</figcaption>
 </figure>
 
 ### Anatomy
 
 <figure markdown="span">
-    ![anatomy.png](anatomy.png "Anatomical breakdown of the properties block")
+    ![property-anatomy.png](property-anatomy.png "Anatomical breakdown of the properties block")
   <figcaption>Anatomical breakdown of the properties block</figcaption>
 </figure>
 
