@@ -1,5 +1,10 @@
 # Beginnen met Netherlands3D in Unity
 
+!!! warning
+
+    Dit deel van de documentatie is nog gebaseerd op een oudere versie van het project. We werken aan een nieuwe versie 
+    die deze spoedig zal vervangen.
+
 ## Systeemeisen
 
 Een laptop waarop je software mag installeren (nog) geen Apple en het liefst met een i5 CPU (of hoger) 

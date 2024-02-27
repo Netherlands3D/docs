@@ -1,5 +1,10 @@
 # Bestuurbare Camera
 
+!!! warning
+
+    Dit deel van de documentatie is nog gebaseerd op een oudere versie van het project. We werken aan een nieuwe versie 
+    die deze spoedig zal vervangen.
+
 Om door de wereld te navigeren hebben we een camera nodig die we zelf kunnen besturen. 
 Hier hebben we natuurlijk een pakketje voor klaar staan in Netherlands3D.
 
@@ -27,16 +32,16 @@ Druk vervolgens op **Play** om je scene met de nieuwe camera te testen.
 
 
 
-# Camera bediening
+## Camera bediening
 
-## Muis
+### Muis
 
 - **Camera verslepen**: Klik en slepen Linkermuisknop
 - **In- en uitzoomen**: Scrollen
 - **Draai om punt**: Muiswiel indrukken of Alt + Linkermuisknop
 - **Rondkijken**: Ctrl+Linkermuisknop + slepen
 
-## Toetsenbord
+### Toetsenbord
 
 - **W of pijl omhoog**: Naar voren schuiven
 - **S of pijl omlaag**: Naar achteren schuiven
@@ -50,7 +55,7 @@ Druk vervolgens op **Play** om je scene met de nieuwe camera te testen.
 - **PageUp**: Camera omhoog bewegen
 - **PageDown**: Camera omlaag bewegen
 
-## Gamepad
+### Gamepad
 
 - **Linker Stick**: Camera in richting van stick bewegen
 - **Rechts Stick**: Camera draaien

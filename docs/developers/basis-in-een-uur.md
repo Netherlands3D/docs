@@ -1,5 +1,10 @@
 # Basis in een uur
 
+!!! warning
+    
+    Dit deel van de documentatie is nog gebaseerd op een oudere versie van het project. We werken aan een nieuwe versie 
+    die deze spoedig zal vervangen.
+
 Naast het beginnen vanaf een nieuw project om daar samples van de package in te laden, bieden we nu ook een basis layout aan, waar de volgende samples uit de package al in zitten:
 
 - Freecamera
