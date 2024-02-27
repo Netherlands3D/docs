@@ -124,7 +124,7 @@ When you want to release a new version of a package you generally go through the
 5. Go to "Releases" on Github (`https://github.com/Netherlands3D/{NAME}/releases`) and
 
    1. Draft a new release
-      ![Draft new release](../imgs/packages/draft-release.png)
+      ![Draft new release](../../imgs/packages/draft-release.png)
    2. Click on "Choose a tag"
    3. Enter the version number from the package.json with a preceding letter `v`, for example: `v1.0.1`.
    4. Click on the option "Create new tag: `v{VERSION}` on publish"
@@ -161,16 +161,16 @@ To do so, you can take the following steps:
 1. Go to https://openupm.com.
 
 2. Click on the "+" button in the menu bar to add a new package
-   ![Screenshot of OpenUPM showing add button](../imgs/packages/openupm-add-package-location.png)
+   ![Screenshot of OpenUPM showing add button](../../imgs/packages/openupm-add-package-location.png)
 
 3. Fill out the Github repository name in the intended field and click on "Go".
-   ![Screenshot of OpenUPM where repository can be submitted](../imgs/packages/openupm-provide-repository-location.png)
+   ![Screenshot of OpenUPM where repository can be submitted](../../imgs/packages/openupm-provide-repository-location.png)
    A form expands where you can verify the package name, ReadMe location and more
 
 4. Enter your github username in the "Discovered by" field; this is used to base a fork of OpenUPM from and add the 
    package as a pull request.
 
-    ![](../imgs/packages/openupm-submission-form.png)
+    ![](../../imgs/packages/openupm-submission-form.png)
 
     !!! note
    

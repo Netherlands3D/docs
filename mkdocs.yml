@@ -5,38 +5,43 @@ theme:
     - navigation.sections
     - navigation.tabs
     - navigation.instant
+    - navigation.expand
+    - navigation.path
 markdown_extensions:
   - admonition
   - md_in_html
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
 nav:
   - 'index.md'
-  - 'Beginnen met ..':
-      - 'Beginnen.md'
-      - 'TileSystemGebruiken.md'
-      - 'DataKlaarzetten.md'
-      - 'DataKoppelen.md'
-  - 'Features':
-    - 'Embedding.md'
-    - 'BAG.md'
-    - 'Camera.md'
-#    - 'SelectionTools.md'
-#    - 'WMSLagen.md'
-#    - 'Zonnestand.md'
-  - 'Packages':
-    - 'packages/creating-and-managing-packages.md'
-  - 'User interface':
-    - 'ui/introduction.md'
-    - 'ui/keeping-our-documentation-current.md'
-    - 'ui/understanding-blocks.md'
-    - 'ui/understanding-components.md'
-    - 'Blocks':
-      - 'ui/blocks/property-panel-and-sections.md'
-    - 'Components':
-      - 'ui/components/cards.md'
-      - 'ui/components/sliders.md'
-      - 'ui/components/text-fields.md'
+#  - 'Eindgebruikers':
+  - 'Voor ontwikkelaars':
+    - 'developers/basis-in-een-uur.md'
+    - 'Beginnen.md'
+    - 'TileSystemGebruiken.md'
+    - 'DataKlaarzetten.md'
+    - 'DataKoppelen.md'
+    - 'Features':
+        - 'Embedding.md'
+        - 'BAG.md'
+        - 'Camera.md'
+    - 'Packages':
+        - 'developers/packages/creating-and-managing-packages.md'
+    - 'User interface':
+      - 'developers/ui/introduction.md'
+      - 'developers/ui/keeping-our-documentation-current.md'
+      - 'developers/ui/understanding-blocks.md'
+      - 'developers/ui/understanding-components.md'
+      - 'Blocks':
+        - 'developers/ui/blocks/property-panel-and-sections.md'
+      - 'Components':
+        - 'developers/ui/components/cards.md'
+        - 'developers/ui/components/sliders.md'
+        - 'developers/ui/components/text-fields.md'
