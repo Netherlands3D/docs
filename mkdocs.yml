@@ -42,6 +42,7 @@ nav:
       - 'Blocks':
         - 'developers/ui/blocks/property-panel-and-sections.md'
       - 'Components':
+        - 'developers/ui/components/accordion.md'
         - 'developers/ui/components/cards.md'
         - 'developers/ui/components/sliders.md'
         - 'developers/ui/components/text-fields.md'
