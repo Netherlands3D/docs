@@ -54,3 +54,9 @@ Follow the following steps to create a new layer type:
 2. Extend the chosen class and implement the required methods.
 3. Add your own logic to the new class
 4. Add a reference to the appropriate type and icon in LayerManager to ensure the new layer does not use the default `?` icon.
+
+## Layers and Functionalities
+Specific layers or specific types of layers can also be enabled/disabled with the functionalities system. Follow these steps to do this:
+1. Add a `FunctionalityListener` to the prefab of the layer. Add the functionality you want to link the layer to, and in the `OnDisableFunctionality` event, add a function that will destroy the gameObject itself. This will clean up any active layers when disabling the functionality.
+2. For any buttons that instantiate the prefab above, add a `FunctionalityListener` to the button that will enable/disable the button's gameObject when the functionality is enabled/disabled respectively. This will ensure the user cannot instantiate layers from functionalities that are disabled.
+3. (Optional) In case your layers should by default spawn when the functionality is enabled, add a PrefabSpawner script to the scene where the functionality and the associated prefab are set in the inspector.
